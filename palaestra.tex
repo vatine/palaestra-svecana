@@ -1,0 +1,23 @@
+\documentclass[a4paper]{book}
+\usepackage{graphicx}
+
+
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}
+
+\newcommand{\scan}[1]{\includegraphics[scale=0.3]{pages/page-#1.png}}
+
+\begin{document}
+\title{Palaestra Svecana \\ or \\ \Large{The Noble Art of Fencing} }
+\author{Diderich Porath}
+\author{Translation -- Ingvar Mattsson}
+
+\maketitle
+
+\include{foreword}
+
+\include{orig-frontmatter}
+
+\end{document}
