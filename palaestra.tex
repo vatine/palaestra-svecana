@@ -7,7 +7,18 @@
   \ifodd\value{page}\hbox{}\newpage\fi
 }
 
+\newcounter{PalaestraChapterCounter}
+
 \newcommand{\scan}[1]{\includegraphics[scale=0.3]{pages/page-#1.png}}
+
+\newcommand{\chap}[1]{ 
+  \stepcounter{PalaestraChapterCounter} {
+    \textbf{
+      \Large{\\ \thePalaestraChapterCounter. #1 \\
+      }  
+    }
+  }
+}
 
 \begin{document}
 \title{Palaestra Svecana \\ or \\ \Large{The Noble Art of Fencing} }
@@ -16,10 +27,10 @@
 
 \maketitle
 
-\include{foreword}
+\input{foreword}
 
-\include{orig-frontmatter}
+\input{orig-frontmatter}
 
-\include{page-003}
+\input{page-003}
 
 \end{document}
