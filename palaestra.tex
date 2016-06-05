@@ -11,18 +11,24 @@
 
 \newcommand{\scan}[1]{\includegraphics[scale=0.15]{pages/kb-page-#1.png}}
 
-\newcommand{\chap}[1]{ 
-  \stepcounter{PalaestraChapterCounter} {
-    \textbf{
-      \Large{\\ \thePalaestraChapterCounter. #1 \\
-      }  
-    }
+\newcommand{\chaptitle}[1]{
+  { \centering \textbf{ \Large{ #1 }}
+
   }
 }
+    
+
+\newcommand{\chap}[1]{ 
+  \stepcounter{PalaestraChapterCounter}
+  \chaptitle{\thePalaestraChapterCounter. #1}
+}
+
 
 \begin{document}
 \title{Palaestra Svecana \\ or \\ \Large{The Noble Art of Fencing} }
+
 \author{Diederich Porath}
+
 \author{Translation -- Ingvar Mattsson}
 
 \maketitle
@@ -32,5 +38,7 @@
 \input{orig-frontmatter}
 
 \input{page-003}
+
+\input{page-004}
 
 \end{document}
