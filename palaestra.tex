@@ -8,8 +8,15 @@
 }
 
 \newcounter{PalaestraChapterCounter}
+\newcounter{PalaestraNoteCounter}
 
 \newcommand{\scan}[1]{\includegraphics[scale=0.15]{pages/kb-page-#1.png}}
+
+\newcommand{\sidenote}[1]{
+  \stepcounter{PalaestraNoteCounter}
+  \footnotemark[\thePalaestraNoteCounter]
+  \marginpar{\footnotemark[\thePalaestraNoteCounter] #1 }
+}
 
 \newcommand{\chaptitle}[1]{
   { \centering \textbf{ \Large{ #1 }}
