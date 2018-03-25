@@ -21,7 +21,10 @@
   }
 }
     
-
+\newcommand{\subchaptitle}[1]{
+  { \vspace{3mm} \chaptitle{ #1 }
+  }
+}
 \newcommand{\chap}[1]{ 
   \stepcounter{PalaestraChapterCounter}
   \chaptitle{CHAP. \thePalaestraChapterCounter. \\ #1}
@@ -88,5 +91,6 @@
 \input{page-049}
 \input{page-050}
 \input{page-051}
+\input{page-052}
 
 \end{document}
