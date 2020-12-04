@@ -9,6 +9,7 @@
 
 \newcounter{PalaestraChapterCounter}
 \newcounter{PalaestraNoteCounter}
+\newcounter{PalaestraExerciseCounter}
 
 \newcommand{\scan}[1]{\includegraphics[scale=0.15]{pages/kb-page-#1.png}}
 
@@ -28,6 +29,11 @@
 \newcommand{\chap}[1]{ 
   \stepcounter{PalaestraChapterCounter}
   \chaptitle{CHAP. \thePalaestraChapterCounter. \\ #1}
+}
+
+\newcommand{\exercise}{
+  \stepcounter{PalaestraExerciseCounter}
+  { \centering \textbf{ \thePalaestraExeerciseCounter }}
 }
 
 
@@ -106,6 +112,7 @@
 \input{page-064}
 \input{page-065}
 \input{page-066}
+\input{page-067}
 
 \input{dict}
 \end{document}
