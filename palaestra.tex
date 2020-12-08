@@ -31,9 +31,14 @@
   \chaptitle{CHAP. \thePalaestraChapterCounter. \\ #1}
 }
 
-\newcommand{\exercise}{
+\newcommand{\exercisetitle}[1]{
+  { \centering \textbf{ #1 }
+
+  }
+}
+\newcommand{\exercise}[1]{
   \stepcounter{PalaestraExerciseCounter}
-  { \centering \textbf{ \thePalaestraExerciseCounter }}
+  \exercisetitle{ \thePalaestraExerciseCounter \\ #1}
 }
 
 
@@ -113,6 +118,7 @@
 \input{page-065}
 \input{page-066}
 \input{page-067}
+\input{page-068}
 
 \input{dict}
 \end{document}
