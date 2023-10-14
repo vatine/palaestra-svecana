@@ -1,12 +1,12 @@
 # palaestra-svecana
 
 This is a translation project, turning this beautiful Swedish 17th
-century fencing manual into an Swedish-Englis diploma edition.
+century fencing manual into an Swedish-English diploma edition.
 
 If you're interested to help out, simply clone this repo, then send a
 pull request containing the transcription or translation of a single
 page. Please do these on a per-page basis, to lessen the chance you're
-colliding with what someoen else is doing. If you spot an obvious
+colliding with what someone else is doing. If you spot an obvious
 transcription, translation, or spelling error, feel free to either
 file an issue or send a pull request.
 
